@@ -38,7 +38,7 @@ Publish: True
 
 The update flag is false while the publish flag is true.
 
-Specifying the options:
+When we specify the options, the update flag is true and the publish flag is false.
 ```
 $ ./parsebool.py --update --publish
 Update: True
