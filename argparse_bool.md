@@ -18,3 +18,28 @@ if __name__ == '__main__':
     print('Update: %s' % (args.update))
     print('Publish: %s' % (args.publish))
 ```
+
+# Explanation
+The key to parsing boolean options is use `action='store_true' or action='store_false'`.
+If the action is `store_true`, and the option is not specified on the command line, the variable will be `False`.
+If the option is specified, it will be `True`.
+
+For `action=store_false`, the opposite is true. If the option is specified on command line, the variable will be `False`.
+
+# Sample Output
+
+Without specifying any options:
+```
+$ ./parsebool.py 
+Update: False
+Publish: True
+```
+
+The update flag is false while the publish flag is true.
+
+Specifying the options:
+```
+$ ./parsebool.py --update --publish
+Update: True
+Publish: False
+```
