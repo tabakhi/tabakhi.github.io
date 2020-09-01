@@ -1,8 +1,9 @@
-# Introduction
+# Parsing boolean options in Python
+## Introduction
 Python has the module argparse to parse command line options. I use this occassionally but I had some trouble using it to parse boolean options.
 I hope this page helps others like me who also want to parse boolean options.
 
-# The Code
+## The Code
 ```
 #!/usr/bin/env python
 import argparse
@@ -19,14 +20,14 @@ if __name__ == '__main__':
     print('Publish: %s' % (args.publish))
 ```
 
-# Explanation
+## Explanation
 The key to parsing boolean options is use `action='store_true' or action='store_false'`.
 If the action is `store_true`, and the option is not specified on the command line, the variable will be `False`.
 If the option is specified, it will be `True`.
 
 For `action=store_false`, the opposite is true. If the option is specified on command line, the variable will be `False`.
 
-# Sample Output
+## Sample Output
 
 Without specifying any options:
 ```
