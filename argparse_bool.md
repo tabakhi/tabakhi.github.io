@@ -1,6 +1,7 @@
 # Parsing boolean options in Python
 ## Introduction
-Python has the module argparse to parse command line options. I use this occassionally but I had some trouble using it to parse boolean options.
+Python has the module argparse to parse command line options. 
+I had some difficulty figuring out how to parse boolean options.
 I hope this page helps others like me who also want to parse boolean options.
 
 ## The Code
